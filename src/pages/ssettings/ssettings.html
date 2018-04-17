@@ -1,0 +1,13 @@
+
+<ion-header> <ion-navbar> <ion-title> Settings </ion-title> </ion-navbar> </ion-header>
+
+
+<ion-content padding>
+
+        <button ion-button full (click)="logout()" > Log Out </button>
+
+        <button ion-button full   > Edit Profile </button>
+
+        <p> Name : {{( profileData | async )?.name }} </p>
+
+</ion-content>
